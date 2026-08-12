@@ -1,5 +1,5 @@
 {:repository/version 1
- :repository/path "orgs/etzhayyim/com-etzhayyim-manabi"
+ :repository/path "orgs/etzhayyim/actor-manabi"
  :layout {:source "src" :tests "test" :data "data" :contracts "contracts"
           :docs "docs" :external-wire "wire"}
  :canonical {:metadata "manifest.edn" :dependencies "dependencies.edn"

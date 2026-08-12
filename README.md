@@ -4,6 +4,14 @@
 machines for literacy, numeracy, civics, vocational learning, lifelong inquiry,
 certificate-preparation scaffolds, and social publication planning.
 
+Canonical repository: `etzhayyim/actor-manabi`.
+
+Within the Tamaki artificial organism, manabi is the learning-support organ. It
+may propose open curricula and self-paced practice, but it does not issue
+degrees, rank people, replace family or cultural transmission, or collect
+learner-surveillance signals. Minor privacy, anti-addiction, Council review,
+and publication gates remain authoritative.
+
 ## Repository contract
 
 - `manifest.edn`, `actor.edn`, and `dependencies.edn` are canonical metadata.

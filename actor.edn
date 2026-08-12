@@ -1,4 +1,4 @@
-{:did "did:web:etzhayyim.github.io:com-etzhayyim-manabi"
+{:did "did:web:etzhayyim.com:actor:manabi"
  :handle "manabi.etzhayyim.com"
  :ipns-key "manabi-actor"
  :graph-type "com.etzhayyim.manabi.graph"
