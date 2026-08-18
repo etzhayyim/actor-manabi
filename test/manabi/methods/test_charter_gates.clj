@@ -2,7 +2,7 @@
   "manabi — constitutional-gate conformance tests. Substrate-native Clojure (ADR-2606160842); 1:1 port of pruned test_charter_gates.py."
   (:require [clojure.test :refer [deftest is]]
             [clojure.edn :as edn]
-            [cheshire.core :as json]))
+            [json.compat :as json]))
 
 (def ^:private repository-root
   (.getCanonicalFile (java.io.File. (or (System/getProperty "user.dir") "."))))
