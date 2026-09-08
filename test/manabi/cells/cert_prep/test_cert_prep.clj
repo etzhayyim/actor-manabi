@@ -11,7 +11,7 @@
     Clojure → ExceptionInfo: manabi.cert_prep R0 scaffold: domain_review cell not activated. ...
   (message prefix identical; exception type differs: RuntimeError vs ExceptionInfo — expected,
    since Clojure/bb does not have Python RuntimeError)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing]]
             [manabi.cells.cert-prep.domain-review   :as domain-review]
             [manabi.cells.cert-prep.personal-material :as personal-material]
@@ -84,7 +84,7 @@
       (practice-question/solve {})
       (is false "should have thrown")
       (catch clojure.lang.ExceptionInfo e
-        (is (clojure.string/includes? (ex-message e) "G15/G16/N11"))
+        (is (str/includes? (ex-message e) "G15/G16/N11"))
         (is (= :practice-question (-> e ex-data :cell)))))))
 
 ;; ── self_assessment ───────────────────────────────────────────────────────────
@@ -103,7 +103,7 @@
       (self-assessment/solve {})
       (is false "should have thrown")
       (catch clojure.lang.ExceptionInfo e
-        (is (clojure.string/includes? (ex-message e) "domainMasteryAttestation"))
+        (is (str/includes? (ex-message e) "domainMasteryAttestation"))
         (is (= :self-assessment (-> e ex-data :cell)))))))
 
 ;; ── parity smoke ─────────────────────────────────────────────────────────────
