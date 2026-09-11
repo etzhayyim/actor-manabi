@@ -27,9 +27,9 @@ runners are prohibited by `repository-contracts.edn`.
 ## Verify
 
 ```sh
-bb test
-clojure -M:test
-clojure -M:lint
+kbb -M:test
+kbb -M:test
+kbb -M:lint
 ```
 
 The Babashka task is the comprehensive standalone test entry point.

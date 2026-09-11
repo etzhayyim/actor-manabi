@@ -8,5 +8,5 @@ the former `20-actors` root.
 - Do not add Go, TinyGo, Python cell runtimes, wasm build products, or shell test
   runners.
 - Preserve the G1–G14 education gates and actor-owned ADR/identity history.
-- Run `bb test`, EDN parsing, JSON validation, and deprecated-artifact audits
+- Run `kbb -M:test`, EDN parsing, JSON validation, and deprecated-artifact audits
   before publishing.
