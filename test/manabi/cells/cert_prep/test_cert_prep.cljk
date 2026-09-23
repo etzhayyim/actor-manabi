@@ -12,7 +12,7 @@
   (message prefix identical; exception type differs: RuntimeError vs ExceptionInfo — expected,
    since Clojure/bb does not have Python RuntimeError)."
   (:require [kotoba.lang.text :as str]
-            [clojure.test :refer [deftest is testing]]
+            [kotoba.test :refer [deftest is testing]]
             [manabi.cells.cert-prep.domain-review   :as domain-review]
             [manabi.cells.cert-prep.personal-material :as personal-material]
             [manabi.cells.cert-prep.practice-question :as practice-question]

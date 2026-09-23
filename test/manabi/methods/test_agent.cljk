@@ -6,7 +6,7 @@
   suite runs offline (Murakumo-only invariant untouched; G5).
 
   Expected values copied VERBATIM from test_agent.py."
-  (:require [clojure.test :refer [deftest is testing run-tests]]
+  (:require [kotoba.test :refer [deftest is testing run-tests]]
             [manabi.methods.agent :as agent]))
 
 ;; ── tests (1:1 port of test_agent.py) ────────────────────────────────────────
