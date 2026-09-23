@@ -1,6 +1,6 @@
 (ns manabi.methods.test-charter-gates
   "manabi — constitutional-gate conformance tests. Substrate-native Clojure (ADR-2606160842); 1:1 port of pruned test_charter_gates.py."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [clojure.edn :as edn]
             [json.compat :as json]))
 
