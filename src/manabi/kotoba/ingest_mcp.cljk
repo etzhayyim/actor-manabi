@@ -4,13 +4,13 @@
 (ns manabi.kotoba.ingest-mcp
   "manabi 学び — MCP seed-ingest scaffold (dry-run default, live path placeholder).
   ADR-2605261045. Template: see funadaiku.kotoba.ingest-mcp."
-  (:require [clojure.java.io :as io]))
+  (:require [kotoba.io :as io]))
 
 (def default-url   "http://127.0.0.1:8077")
 (def default-graph "com.etzhayyim.manabi")
 
 (def seed-path
-  (str (-> (io/file *file*) .getParentFile .getAbsolutePath)
+  (str (-> (io/file *file*) io/parent-file io/absolute-path)
        "/seed.edn"))
 
 (defn strip-comments [^String s]
